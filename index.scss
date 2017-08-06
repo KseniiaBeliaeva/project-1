@@ -6,7 +6,11 @@ html {
     margin: 15px 15px;
 
 }
-
+.menu-icon {
+  font-size:48px;
+  color:red;
+  display:none;
+}
 .container {
   display: flex;
   margin:0 20px;
@@ -73,14 +77,25 @@ h1 {
 }
 
 @media (max-width: 500px) {
+  .menu-icon {
+    display:block;
+  
+  
+    .menu-icon::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  }
          .container {
-           display: inline;
+           display: none;
 
             .menu-item {
+              
             text-align: center;
-width:100%; 
-padding-bottom: 5px;
-padding-top: 5px;
+            width:100%; 
+            padding-bottom: 5px;
+            padding-top: 5px;
 }
 }
 

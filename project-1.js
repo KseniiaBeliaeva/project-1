@@ -51,4 +51,10 @@ document.getElementById('slideshow-container').innerHTML = slidessum;
       setTimeout(showSlides, 4000); // Change image every 4 seconds
     }
 
-  
+//   HIDE MENU
+
+    $(document).ready(function () {
+        $('.menu-icon').click(function () { 
+            $('.container').toggle('slow');
+        })
+    });

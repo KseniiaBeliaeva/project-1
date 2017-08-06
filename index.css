@@ -3,6 +3,11 @@ html {
   height: 100%;
   margin: 15px 15px; }
 
+.menu-icon {
+  font-size: 48px;
+  color: red;
+  display: none; }
+
 .container {
   display: flex;
   margin: 0 20px;
@@ -51,8 +56,14 @@ h1 {
     clear: both; }
 
 @media (max-width: 500px) {
+  .menu-icon {
+    display: block; }
+    .menu-icon .menu-icon::after {
+      content: "";
+      clear: both;
+      display: table; }
   .container {
-    display: inline; }
+    display: none; }
     .container .menu-item {
       text-align: center;
       width: 100%;
