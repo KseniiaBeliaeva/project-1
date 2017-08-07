@@ -29,6 +29,9 @@ h1 {
   text-align: center;
   letter-spacing: 2; }
 
+p {
+  font-family: 'Lora', serif; }
+
 /* Slideshow container */
 #slideshow-container {
   display: flex;
@@ -56,6 +59,8 @@ h1 {
     clear: both; }
 
 @media (max-width: 500px) {
+  .container {
+    background-image: url(slideshowimages/slide1.jpeg); }
   .menu-icon {
     display: block; }
     .menu-icon .menu-icon::after {

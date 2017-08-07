@@ -1,15 +1,20 @@
-// <!--TOP MENU SCRIPT -- >
 
-        let menuitem = '<div class="menu-item"><a href="#">';
+
+
+
+      // <!--TOP MENU SCRIPT -- >
+
+    let menuitem = '<div class="menu-item"><a href="';
     let menuitemend = '</a></div>';
     let menuarray = ['Home', 'Helpful FAQs', 'Princess parties', 'Superheroes parties', 'Packages', 'Make a booking / Contacts', 'Reviews'];
     let sum = '';
-    for (let i = 0; i < menuarray.length; i++) {
-            // debugger;
-            sum = sum + menuitem + menuarray[i] + menuitemend;
+        for (let links = 0; links < menuarrayLinks.length; links++) {
+            sum = sum + menuitem + menuarrayLinks[links] + menuitem2 + menuarray[links] + menuitemend;
 
         }
+
     document.getElementById('top-menu').innerHTML = sum;
+    
 
 
 

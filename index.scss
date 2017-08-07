@@ -6,11 +6,14 @@ html {
     margin: 15px 15px;
 
 }
+              // menu-icon
 .menu-icon {
   font-size:48px;
   color:red;
   display:none;
 }
+
+            // menu container
 .container {
   display: flex;
   margin:0 20px;
@@ -36,6 +39,10 @@ h1 {
    letter-spacing: 2;
 }
 
+p{
+  font-family: 'Lora', serif;
+
+}
 
 
 /* Slideshow container */
@@ -77,6 +84,9 @@ h1 {
 }
 
 @media (max-width: 500px) {
+  .container {
+    background-image: url(slideshowimages/slide1.jpeg);
+  }
   .menu-icon {
     display:block;
   
