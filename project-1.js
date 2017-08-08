@@ -5,8 +5,10 @@
       // <!--TOP MENU SCRIPT -- >
 
     let menuitem = '<div class="menu-item"><a href="';
+    let menuitem2 = '.html">';
     let menuitemend = '</a></div>';
     let menuarray = ['Home', 'Helpful FAQs', 'Princess parties', 'Superheroes parties', 'Packages', 'Make a booking / Contacts', 'Reviews'];
+    let menuarrayLinks = ['index', 'helpful-faqs', 'princess-parties', 'superheroes-parties', 'packages', 'make-a-booking', 'reviews'];
     let sum = '';
         for (let links = 0; links < menuarrayLinks.length; links++) {
             sum = sum + menuitem + menuarrayLinks[links] + menuitem2 + menuarray[links] + menuitemend;
@@ -33,8 +35,8 @@ document.getElementById('slideshow-container').innerHTML = slidessum;
 
 //   <!--SLIDESHOW SCRIPT AUTOSLIDE-- >
 
-
-        let slideIndex = 0;
+// debugger;
+    let slideIndex = 0;
     showSlides();
     function showSlides() {
             let slides = document.getElementsByClassName('slideshow-image-wrapper');
@@ -63,3 +65,27 @@ document.getElementById('slideshow-container').innerHTML = slidessum;
             $('.container').toggle('slow');
         })
     });
+
+    //BOTTOM BUTTONS
+    // $(document).ready(function () {
+    //     $('.bottom-button__item').click(function () { 
+       
+    //         let button = $(this);
+    //         $("." + button.attr('data-content')).click(function () { 
+    //         });
+    //         debugger;
+
+    //     })
+    // });
+$(document).ready(function () {
+    $('.bottom-buttons p').hide();
+    $('.bottom-buttons').append('<button> press here </button>');
+    $('button').addClass('bottom-button__item');
+    $('button').click(function () {
+        $(this).prev().slideDown();
+        $(this).show();
+      
+    });
+   
+    
+});
