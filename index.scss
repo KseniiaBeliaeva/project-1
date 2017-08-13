@@ -125,16 +125,12 @@ p{
 /*Flex buttons*/
 .bottom-buttons {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: nowrap;
   .bottom-button__item {
     flex-grow: 1;
     padding: 15px;
   }
 }
-.red-button {
-  display: inline;
-  margin-left: 15%;
-  color:red;
-}
+
 }

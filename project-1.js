@@ -83,9 +83,9 @@ $(document).ready(function () {
     $('button').addClass('bottom-button__item');
     $('button').click(function () {
         $(this).prev().slideDown();
-        $(this).show();
-      
+    
     });
+  
    
     
 });
