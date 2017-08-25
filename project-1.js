@@ -66,23 +66,19 @@ document.getElementById('slideshow-container').innerHTML = slidessum;
         })
     });
 
-    //BOTTOM BUTTONS
-    // $(document).ready(function () {
-    //     $('.bottom-button__item').click(function () { 
-       
-    //         let button = $(this);
-    //         $("." + button.attr('data-content')).click(function () { 
-    //         });
-    //         debugger;
+let buttons = [
+    '<button>Under 5</button>',
+    '<button>5-10</button>',
+    '<button>Under 13</button>'];
 
-    //     })
-    // });
 $(document).ready(function () {
-    $('.bottom-buttons p').hide();
-    $('.bottom-buttons').append('<button> press here </button>');
+    let $blocks = $('.bottom-buttons');
+    for (let i = 0, ii = Math.min($blocks.length, buttons.length); i < ii; ++i) {
+        $($blocks[i]).append(buttons[i]).find('p').hide();
+    }
     $('button').addClass('bottom-button__item');
     $('button').click(function () {
-        $(this).prev().slideDown();
+        $(this).prev().slideToggle();
     
     });
   

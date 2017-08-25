@@ -21,7 +21,8 @@ h5 {
   justify-content: flex-end;
   font-family: "Cinzel", serif;
   font-size: 120%;
-  letter-spacing: 2; }
+  letter-spacing: 2; 
+}
   .container .menu-item {
     order: 2;
     flex-grow: 2;
@@ -64,8 +65,6 @@ p {
     clear: both; }
 
 @media (max-width: 500px) {
-  .container {
-    background-image: url(slideshowimages/slide1.jpeg); }
   .menu-icon {
     display: block; }
     .menu-icon .menu-icon::after {
