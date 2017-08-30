@@ -120,15 +120,13 @@ p{
         }
 }
 
+
 /*Flex buttons*/
 .bottom-buttons {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  .bottom-button__item {
-    flex-grow: 1;
-    padding: 15px;
-  }
+
 }
 
 }

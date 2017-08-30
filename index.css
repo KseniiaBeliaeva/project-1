@@ -1,17 +1,46 @@
 body,
 html {
-  height: 100%;
-  margin: 15px 15px; }
+  margin:0;
+ }
+
 
 h5 {
   font-family: "Cinzel", serif;
   text-align: center;
   letter-spacing: 1px; }
 
+.containericon {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+
 .menu-icon {
   font-size: 48px;
   color: red;
-  display: none; }
+  display: none; 
+text-transform: uppercase;
+}
 
 .container {
   display: flex;
@@ -23,7 +52,7 @@ h5 {
   font-size: 120%;
   letter-spacing: 2; 
 }
-  .container .menu-item {
+ .menu-item {
     order: 2;
     flex-grow: 2;
     color: blue;
@@ -37,6 +66,7 @@ h1 {
 
 p {
   font-family: 'Lora', serif; }
+
 
 /* Slideshow container */
 #slideshow-container {
@@ -64,7 +94,12 @@ p {
     width: 50%;
     clear: both; }
 
-@media (max-width: 500px) {
+@media (max-width: 320px) {
+  .containericon{
+    padding-left: 15px;
+    padding-right: 15px;
+    display: block;
+  }
   .menu-icon {
     display: block; }
     .menu-icon .menu-icon::after {
@@ -79,7 +114,9 @@ p {
       padding-bottom: 5px;
       padding-top: 5px; }
   .main-content-item {
-    margin: 0 5px; }
+    margin: 0;
+    padding: 5px; 
+  }
     .main-content-item img {
       width: 100%;
       clear: both; }
@@ -88,8 +125,48 @@ p {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap; }
-    .bottom-buttons .bottom-button__item {
-      flex-grow: 1;
-      padding: 15px; } }
+  }
 
-/*# sourceMappingURL=index.css.map */
+.button {
+      padding: 5%;
+      background-color: #c0fc64;
+    line-height: 1;
+    border: 1px solid #3f6a07;
+    margin: 2px 0;
+
+    }
+
+@media only screen and (max-width : 414px) and (min-width : 321px) {
+  .main-content-container img {
+    width: 100%;
+  }
+  .container {
+    display: inline;
+    margin: 0;
+    text-align: center;
+  }
+  .menu-item {
+    padding: 10px;
+    color: red;
+  }
+    }
+
+
+@media only screen and (max-width: 768px) and (min-width: 415px)  {
+  body {
+    padding: 5px;
+  }
+  .container {
+    margin: 0;
+   }
+   .menu-item {
+     padding: 0;
+     order: 1;
+     
+   }
+.button {
+  width: 100%;
+  font-size: 15px;
+  padding: 15px;
+}
+}

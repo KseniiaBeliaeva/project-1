@@ -3,11 +3,12 @@
 
 
       // <!--TOP MENU SCRIPT -- >
+      //=================================
 
     let menuitem = '<div class="menu-item"><a href="';
     let menuitem2 = '.html">';
     let menuitemend = '</a></div>';
-    let menuarray = ['Home', 'Helpful FAQs', 'Princess parties', 'Superheroes parties', 'Packages', 'Make a booking / Contacts', 'Reviews'];
+    let menuarray = ['home', 'helpful FAQs', 'princess parties', 'superheroes parties', 'packages', 'make a booking / contacts', 'reviews'];
     let menuarrayLinks = ['index', 'helpful-faqs', 'princess-parties', 'superheroes-parties', 'packages', 'make-a-booking', 'reviews'];
     let sum = '';
         for (let links = 0; links < menuarrayLinks.length; links++) {
@@ -21,6 +22,7 @@
 
 
     // <!--SLIDESHOW SCRIPT IMAGES -- >
+    //=================================
     
             let slideshowitem = '<div class="slideshow-image-wrapper" style="background-image:url(slideshowimages/';
                 let slideshowarray= ['slide1', 'slide2', 'slide3', 'slide4', 'slide5'];
@@ -33,9 +35,11 @@ for (let j = 0; j < slideshowarray.length; j++) {
 }
 document.getElementById('slideshow-container').innerHTML = slidessum;
 
-//   <!--SLIDESHOW SCRIPT AUTOSLIDE-- >
 
-// debugger;
+//   <!--SLIDESHOW SCRIPT AUTOSLIDE-- >
+//=====================================
+
+
     let slideIndex = 0;
     showSlides();
     function showSlides() {
@@ -58,7 +62,8 @@ document.getElementById('slideshow-container').innerHTML = slidessum;
       setTimeout(showSlides, 4000); // Change image every 4 seconds
     }
 
-//   HIDE MENU
+//HIDE MENU (3 BUTTONS FOR DIFFERENT AGES)
+//========================================
 
     $(document).ready(function () {
         $('.menu-icon').click(function () { 
@@ -66,22 +71,19 @@ document.getElementById('slideshow-container').innerHTML = slidessum;
         })
     });
 
-let buttons = [
-    '<button>Under 5</button>',
-    '<button>5-10</button>',
-    '<button>Under 13</button>'];
-
+    $('.button-description').hide();
 $(document).ready(function () {
-    let $blocks = $('.bottom-buttons');
-    for (let i = 0, ii = Math.min($blocks.length, buttons.length); i < ii; ++i) {
-        $($blocks[i]).append(buttons[i]).find('p').hide();
-    }
-    $('button').addClass('bottom-button__item');
     $('button').click(function () {
-        $(this).prev().slideToggle();
-    
-    });
-  
-   
-    
+        $(this).next().slideToggle();
+
+    })
 });
+   
+//ANIMATED MENU BAR
+//=================
+
+    function myFunction(x) {
+        x.classList.toggle("change");
+
+    $('#top-menu').slideToggle();
+    }
