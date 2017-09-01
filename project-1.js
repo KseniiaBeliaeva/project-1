@@ -75,8 +75,8 @@ $(document).ready(function () {
     })
 });
 
-//ANIMATED MENU BAR
-//=================
+//ANIMATED MENU BAR (X-SHAPED)
+//===========================
 
 function myFunction(x) {
     x.classList.toggle("change");
@@ -84,14 +84,12 @@ function myFunction(x) {
     $('#top-menu').slideToggle();
 }
 
-$('.menu-icons').click(function () { 
-    $(this).animate({
-        backgroundColor: "red",
-        height: 100,
-    }, 1500);
-    $('.container').toggle(function (){ 
-        $(this).animate({
-            color:'red',
-        })
-    });
-    })
+//ANIMATED MENU BAR SCREENS 415-768px
+//===================================
+
+function openNav() {
+    document.getElementById("top-menu").style.left = "0";
+}
+function closeNav() {
+    document.getElementById("top-menu").style.left = "-100%";
+}

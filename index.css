@@ -40,13 +40,15 @@ h5 {
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-/* 
-.menu-icon {
-  font-size: 48px;
-  color: red;
-  display: none; 
-text-transform: uppercase;
-} */
+#closeButton {
+    position: absolute;
+    right: 31px;
+    top: 2px;
+    font-size: 50px;
+    color: rebeccapurple;;
+    cursor: pointer;
+    
+}
 
 .container {
   display: flex;
@@ -189,28 +191,44 @@ p {
     display: none;
   }
   .container {
-    display: none;
     margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: block;
+    z-index: 1;
+    top: 0;
+    left: -100%;
+    background-color:pink;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+   }
+
+   .main-content-container img {
+         width: 334px;
    }
    .menu-icons {
      display: block;
      text-align: center;
+     padding: 15px;
+     background-color: lavenderblush;
    }
   .menu-icons p{
-    display: inline;
-    border-radius: 50%;
-    padding: 15px;
-    border: 1px solid red;
+    text-transform: uppercase;
   }
    .menu-item {
-    flex-grow: 1;
-    text-align: center;
-    padding: 2px;
-    font-size: 18px;
-
+   padding: 15px;
+    font-size: 22px;
+    text-transform: uppercase;
    }
    .menu-item a {
      text-decoration: none;
+     color: rebeccapurple;
+    }
+    .menu-item a:hover {
+      color:white;
     }
 .button {
   width: 100%;
