@@ -207,7 +207,10 @@ p {
    }
 
    .main-content-container img {
-         width: 334px;
+         width: 100%;
+   }
+   #img-2 {
+     display: none;
    }
    .menu-icons {
      display: block;
@@ -235,4 +238,20 @@ p {
   font-size: 15px;
   padding: 15px;
 }
+}
+@media only screen and (max-width: 1025px) and (min-width: 767px)  {
+  .containericon {
+    display: none;
+  }
+  #closeButton{
+    display: none;
+  }
+  .container {
+    display: flex;
+  }
+  .menu-item {
+    flex-grow: 1;
+    text-align: center;
+    font-family: "Cinzel", serif;
+  }
 }
