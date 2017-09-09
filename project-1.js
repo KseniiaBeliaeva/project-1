@@ -21,8 +21,8 @@
 //=================================
 
 let slideshowitem = '<div class="slideshow-image-wrapper" style="background-image:url(slideshowimages/';
-let slideshowarray = ['slide1', 'slide2', 'slide3', 'slide4', 'slide5'];
-let slideshowitemend = '.jpeg)"></div>';
+let slideshowarray = ['kidsparty1', 'kidsparty2', 'kidsparty3', 'kidsparty4', 'kidsparty5'];
+let slideshowitemend = '.jpg)"></div>';
 let slidessum = '';
 for (let j = 0; j < slideshowarray.length; j++) {
 
@@ -55,7 +55,7 @@ function showSlides() {
 
 
 
-    setTimeout(showSlides, 4000); // Change image every 4 seconds
+    setTimeout(showSlides, 1000); // Change image every 4 seconds
 }
 
 //HIDE MENU (3 BUTTONS FOR DIFFERENT AGES)
@@ -93,3 +93,12 @@ function openNav() {
 function closeNav() {
     document.getElementById("top-menu").style.left = "-100%";
 }
+
+
+//Chaining mediaqueries and javascript
+
+// const mq = window.matchMedia('(max-width: 1025px) and (min-width: 415px)');
+// if (mq.matches) {
+//     alert('Hey');
+// } else (alert('NO'));
+
