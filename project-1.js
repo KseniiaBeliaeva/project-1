@@ -1,7 +1,7 @@
 // <!--TOP MENU SCRIPT -- >
 //=================================
 
-// let menuitem = '<div class="menu-item"><a href="';
+// let menuitem = '<div class="menu-item"><a class="menu-item__link" href="';
 // let menuitem2 = '.html">';
 // let menuitemend = '</a></div>';
 // let menuarray = ['home', 'helpful FAQs', 'princess parties', 'superheroes parties', 'packages', 'make a booking / contacts', 'reviews'];
@@ -55,7 +55,7 @@ function showSlides() {
 
 
 
-    setTimeout(showSlides, 1000); // Change image every 4 seconds
+    setTimeout(showSlides, 3000); // Change image every 4 seconds
 }
 
 //HIDE MENU (3 BUTTONS FOR DIFFERENT AGES)
@@ -63,15 +63,14 @@ function showSlides() {
 
 // $(document).ready(function () {
 //     $('.menu-icon').click(function () { 
-//         $('.container').toggle('slow');
+//         $('#top-menu').toggle('slow');
 //     })
 // });
 
-$('.button-description').hide();
+$('.bottom-button__description').hide();
 $(document).ready(function () {
-    $('button').click(function () {
+    $('.bottom-button__item').click(function () {
         $(this).next().slideToggle();
-
     })
 });
 
@@ -102,3 +101,42 @@ function closeNav() {
 //     alert('Hey');
 // } else (alert('NO'));
 
+
+//PAGE STYLES
+//===========
+function button1() { 
+    $('#page-style__button1').click(() => {
+        if ($(window).width() > 767) {
+            $('#top-menu').css('backgroundColor', 'darkred');
+        } else { }
+        $('.header').css('color', 'purple');
+        $('#top-menu').css('color', 'darkred');
+        $('.bottom-button__item').css('backgroundColor', 'yellow');
+    })
+}
+button1();
+function button2() { }
+$('#page-style__button2').click(() => { 
+    $('.bar1, .bar2, .bar3').css('backgroundColor','#4c2759');
+    $('.bottom-button__item').css('backgroundColor','#9f58b6');
+    $('.header').css('color', 'red');
+})
+button2();
+function button3() {
+    $('#page-style__button3').click(() => {
+        $('.bar1, .bar2, .bar3').css('backgroundColor', '#4c2759');
+        $('.bottom-button__item').css('backgroundColor', '#B1D730');
+        $('.header').css('color', '#F0F7D4');
+    });
+    $('#page-style__button3').hover(function() { 
+        $('.bottom-button__item').css('backgroundColor', '#B1D730');
+    });
+}
+button3();
+function initialStyle() { 
+    $('initial').click(() => {
+        $('.bar1, .bar2, .bar3').css('backgroundColor', 'initial');
+        $('.bottom-button__item').css('backgroundColor', 'initial');
+        $('.header').css('color', 'initial');
+    });
+}

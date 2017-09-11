@@ -29,28 +29,30 @@
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
 </script>
+
   <!-- TOP MENU
+    ===============
        TOP MENU -->
 
-  <div class="containericon" onclick="myFunction(this)">
+  <div class="container-bars" onclick="myFunction(this)">
     <div class="bar1"></div>
     <div class="bar2"></div>
     <div class="bar3"></div>
   </div>
 
-<div class="menu-icons" onclick="openNav()">
-  <p>menu</p>
+<div class="menu-section" onclick="openNav()">
+  <p class="menu-section__text">Menu</p>
 </div>
 
-  <div class="container" id="top-menu">
+  <div  id="top-menu">
     <a id="closeButton" onclick="closeNav()">&times;</a>
-    <div class="menu-item"><a href="index.html">home</a></div>
-    <div class="menu-item"><a href="helpful-faqs.html">helpful FAQs</a></div>
-    <div class="menu-item"><a href="princess-parties.html">princess parties</a></div>
-    <div class="menu-item"><a href="superheroes-parties.html">superheroes parties</a></div>
-    <div class="menu-item"><a href="packages.html">packages</a></div>
-    <div class="menu-item"><a href="make-a-booking.html">make a booking / contacts</a></div>
-    <div class="menu-item"><a href="reviews.html">reviews</a></div>
+    <div class="menu-item"><a class="menu-item__link" href="index.html">home</a></div>
+    <div class="menu-item"><a class="menu-item__link" href="helpful-faqs.html">helpful FAQs</a></div>
+    <div class="menu-item"><a class="menu-item__link" href="princess-parties.html">princess parties</a></div>
+    <div class="menu-item"><a class="menu-item__link" href="superheroes-parties.html">superheroes parties</a></div>
+    <div class="menu-item"><a class="menu-item__link" href="packages.html">packages</a></div>
+    <div class="menu-item"><a class="menu-item__link" href="make-a-booking.html">make a booking / contacts</a></div>
+    <div class="menu-item"><a class="menu-item__link" href="reviews.html">reviews</a></div>
   </div>
 
 
@@ -58,9 +60,15 @@
 
   <!--TOP MENU MATERIAL ICONS-->
   <!-- For modern browsers. -->
+<h5 style="color:red;">!Press these buttons below for other page style designs!</h5>
+<div class="page-style">
+  <button id="page-style__button1">Yellow</button>
+  <button id="page-style__button2">Green</button>
+  <button id="page-style__button3">Orange</button>
+  <button id="initial">Initial style</button>
+</div>
 
-
-  <h1>Children's Birthday Parties and Events</h1>
+  <h1 class="header">Children's Birthday Parties and Events</h1>
 
   <!-- SLIDESHOW
      SLIDESHOW -->
@@ -70,20 +78,20 @@
 
   <!-- MAIN CONTENT
                    -->
-  <div class="main-content-container">
-    <div class="main-content-item">
-      <h5 style="text-align:center;letter-spacing:1px;">Do you want to hold a party your child will never forget?</h5>
+  <div class="main-content__container">
+    <div class="main-content__item">
+      <h5 class="main-content__item-text">Do you want to hold a party your child will never forget?</h5>
       <p>Our professionally trained Performers bring their favourite storybook
         characters to life! Offering authentic Fairytale characters for your next event, Let Magical Princess Entertainment
         make your next party a one your child will cherish forever.
       </p>
     </div>
 
-    <div class="main-content-item">
-      <h5 style="text-align:center;letter-spacing:1px;">With many characters to choose from and quality Entertainment we guarantee you will not be disappointed!
+    <div class="main-content__item">
+      <h5 class="main-content__item-text">With many characters to choose from and quality Entertainment we guarantee you will not be disappointed!
 </h5>
-      <img src="slideshowimages/girl.jpg" id="img-1" alt="A girl is eating a watermelon">
-      <img src="slideshowimages/snow.jpeg" id="img-2" alt="Watermelon on a table">
+      <img src="slideshowimages/girl.jpg" id="main-content__item-img main-content__item-img1" alt="A girl is eating a watermelon">
+      <img src="slideshowimages/snow.jpeg"  id="main-content__item-img main-content__item-img2" alt="Watermelon on a table">
 
       <p>Pri regióne posidõniúm te. Façér sempêr ãd vel. Vidé duis petentium meá éx, lõrem àtquí môlestie mêa id. His ea mazim
         volútpat interpretaris, pri né esse definiebas assueverit, case táçimátês usu ât. Solêt iudico ei mei, quô ut amet
@@ -96,8 +104,8 @@
 
 
 
-    <div class="main-content-item">
-      <img src="slideshowimages/disney.jpeg" alt="A girl is eating a watermelon">
+    <div class="main-content__item">
+      <img src="slideshowimages/disney.jpeg" id="main-content__item-img" alt="A girl is eating a watermelon">
       <p>
         Lorem ipsum dolor sit amet, vel modo mucius timeam ei, per et dico tritani pertinacia, eu ius duis mazim. Vis te cibo delectus,
         ea fuisset tacimates cum, patrioque quaerendum ut vix. Pro sonet delicata et, ius dolorem invenire eu, ut lucilius
@@ -107,31 +115,33 @@
     </div>
   </div>
   <!-- Flex buttons -->
-  <h5 id="header__bottom-buttons">How old is your child?</h5>
+  <h5 id="bottom-buttons__header">How old is your child?</h5>
   <div class="bottom-buttons">
-    <button class="button">Under 5</button>
-    <p class="button-description">Pri regióne posidõniúm te. Façér sempêr ãd vel. Vidé duis petentium meá éx, lõrem àtquí môlestie mêa id. His ea mazim
+    <button class="bottom-button__item">Under 5</button>
+    <p class="bottom-button__description">Pri regióne posidõniúm te. Façér sempêr ãd vel. Vidé duis petentium meá éx, lõrem àtquí môlestie mêa id. His ea mazim
       volútpat interpretaris, pri né esse definiebas assueverit, case táçimátês usu ât. Solêt iudico ei mei, quô ut amet
       impedit, tàle fâcéte te his.</p>
   </div>
   <div class="bottom-buttons">
-    <button class="button">5 - 10</button>
-    <p class="button-description">Summo sólet êám nê, çómmôdõ ornãtus phílosóphiá eos ei, cu erôs luçilíus prodêssét pri. Mél ullúm nõstrud sadipsçing
+    <button class="bottom-button__item">5 - 10</button>
+    <p class="bottom-button__description">Summo sólet êám nê, çómmôdõ ornãtus phílosóphiá eos ei, cu erôs luçilíus prodêssét pri. Mél ullúm nõstrud sadipsçing
       te, in sed dócendi cotidieque.</p>
   </div>
   <div class="bottom-buttons">
-    <button class="button">Under 13</button>
-    <p class="button-description">ólôre inimicus refêrrentúr mea eu. Hás pútànt sáperet héndrerit an, qui et volumus euripidis hendrerit, aúgué êrànt tórquátos
+    <button class="bottom-button__item">Under 13</button>
+    <p class="bottom-button__description">ólôre inimicus refêrrentúr mea eu. Hás pútànt sáperet héndrerit an, qui et volumus euripidis hendrerit, aúgué êrànt tórquátos
       prí cu. Sit éí esse movet õcurrerét, vel copiosâé splendide eâ.</p>
   </div>
+
+ 
   <!-- FACEBOOK LIKE BUTTON
   ==================== -->
   <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FMagicalprincesses%2F&width=50&layout=button_count&action=recommend&size=small&show_faces=true&share=true&height=46&appId"
     width="200" height="46" style="border:none;overflow:hidden;margin:5%;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 <div class="fb-save" data-uri="https://www.facebook.com/Magicalprincesses/" data-size="large"></div>
   <footer>
-    <div class="footer" style="height:60px;background-color:azure;margin-top:5%;">
-      <p style="text-align:center; margin:0 auto;line-height:4;">Copyright &copy; Ksenia Beliaeva</p>
+    <div class="footer">
+      <p class="footer-text">Copyright &copy; Ksenia Beliaeva</p>
     </div>
   </footer>
   <script src="project-1.js"></script>

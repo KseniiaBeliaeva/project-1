@@ -5,28 +5,79 @@ html {
   padding-bottom: 0;
   margin-bottom: 0;
  }
+ .page-style{
+    display: flex;
+    width: 100%;
+    /* margin: 15px; */
+    padding: -8px;
+    box-sizing: border-box;
+    border: 1px dotted red;
+    background-color: lightgray;
+  }
+ .page-style button{
+  flex-grow: 1;
+  width:30%;
+  height: 35px;
+  float: left;
+  margin: 3px;
+ border-radius: 5%;
+ }
 
+#page-style__button1{
+  background-color: yellow;
+}
+#page-style__button2 {
+  background-color: #487c36;
+}
+#page-style__button3 {
+  background-color:orange;
+}
+.header-changed-purple {
+color:#9f58b6 !important;
+}
+.header-changed-green{
+  color:#487c36 !important;
+}
+.container-bar {
+  background-color:#4c2759 !important;
+}
+.container-bar-orange{
+  background-color: #B1D730 !important;
+}
+.bottom-button__item-changed {
+  background-color: #9f58b6 !important;
+}
+.bottom-button__item-changed:hover {
+  background-color: #36367c !important;
+}
+.bottom-button__item-changed-orange{
+  background-color:#FC600A;
 
-h5 {
+}
+.main-content__item-text {
+  text-align:center;
+  letter-spacing:1px;
   font-family: Lora;
-  text-align: center;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+    text-transform: uppercase;
+
 }
 
-.containericon {
+.container-bars {
     display: block;
     cursor: pointer;
 }
-.menu-item a {
+.menu-item__link {
     color: #941E3A;
     letter-spacing: 2px;
     font-family: Lora;
     text-transform: capitalize;
     font-size: 20px;
+    text-decoration: none;
 }
 
-.menu-icons {
+/* X-SHAPED ICON
+============= */
+.menu-section {
   display: none;
 }
 .bar1, .bar2, .bar3 {
@@ -36,18 +87,16 @@ h5 {
     margin: 6px 0;
     transition: 0.4s;
 }
-
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
     transform: rotate(-45deg) translate(-9px, 6px) ;
 }
-
 .change .bar2 {opacity: 0;}
-
 .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
     transform: rotate(45deg) translate(-8px, -8px) ;
 }
+/* <x-shaped icon/>*/
 
 #closeButton {
     position: absolute;
@@ -55,11 +104,9 @@ h5 {
     top: 2px;
     font-size: 50px;
     color: rebeccapurple;;
-    cursor: pointer;
-    
+    cursor: pointer; 
 }
-
-.container {
+#top-menu {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -67,16 +114,12 @@ h5 {
   border-bottom: 1px solid #3D0B17;
 }
 
-h1 {
+.header {
   font-family:Lora, cursive;
   text-align: center;
   letter-spacing: 2;
 color:#9F1434; 
 }
-
-p {
-  font-family: 'Lora', serif; }
-
 
 /* Slideshow container */
 #slideshow-container {
@@ -87,34 +130,43 @@ p {
   margin: 0 auto; 
 }
   #slideshow-container .slideshow-image-wrapper {
-  background-size: 400px;
+  background-size: 100%;
+  background-repeat: no-repeat;
   }
   #slideshow-container .slideshow-image {
     display: flex;
     height: 350px;
-    margin: 0 auto; }
-
-.main-content-container {
+    margin: 0 auto;
+  }
+.main-content__container {
   display: inline; 
 }
- .main-content-item {
+ .main-content__item {
     width: 100%;
     font-family: Lora, serif; }
-  .main-content-container img {
+  .main-content__item-img{
     width: 50%;
     clear: both; 
   }
-  .button {
+  .bottom-button__item {
     text-transform: uppercase;
    
   }
-  .button:focus {
+  .bottom-button__item:focus {
     outline-style: none;
     font-weight: bold;
   
   }
- 
-
+.footer {
+  height:60px;
+  background-color:azure;
+  margin-top:5%;
+}
+.footer-text {
+  text-align:center;
+  margin:0 auto;
+  line-height:4;
+}
 /* MAX WIDTH 320px */
 /* =============== */
 
@@ -123,13 +175,13 @@ p {
   h1 {
     margin-top: 55px;
   }
-  .containericon{
+  .container-bars{
     position: absolute;
     top: 20px;
     left: 20px;
     display: block;
   }
-  .container {
+  #top-menu {
     display: none;
     margin-left: 0;
    }
@@ -142,13 +194,14 @@ p {
       padding-bottom: 5px;
       padding-top: 5px; 
     }
-  .main-content-item {
+  .main-content__item {
     margin: 0;
 
   }
-    .main-content-item img {
+    .main-content__item img {
       width: 100%;
-      clear: both; }
+      clear: both;
+    }
   /*Flex buttons*/
   .bottom-buttons {
     display: flex;
@@ -156,7 +209,7 @@ p {
     flex-wrap: nowrap; }
   }
 
-.button {
+.bottom-button__item {
     padding: 5%;
     background-color: #F38CA4;
         border: none;
@@ -164,7 +217,7 @@ p {
     box-shadow: 0px 0 2px 0px;
     color: #3D0B17;
     }
-  .button:hover {
+  .bottom-button__item:hover {
     background-color: #D0113D;
     color: white;
   }
@@ -175,10 +228,10 @@ p {
 
 
 @media only screen and (max-width : 414px) and (min-width : 321px) {
-  .main-content-container img {
+  .main-content__container img {
     width: 100%;
   }
-  .container {
+  #top-menu {
     display: none;
     margin: 0;
     text-align: center;
@@ -192,7 +245,7 @@ p {
     padding: 10px;
     color: red;
   }
-  .button {
+  .bottom-button__item {
     width: 100%;
   }
     }
@@ -211,10 +264,10 @@ p {
   html {
     padding: 0;
   }
-  .containericon {
+  .container-bars {
     display: none;
   }
-  .container {
+  #top-menu {
     margin: 0 auto;
     height: 100%;
     width: 100%;
@@ -230,24 +283,24 @@ p {
     text-align:center;
    }
 
-   .main-content-container img {
+   .main-content__container img {
     width: 50%;
     float: left;
     padding: 0 15px 0 0;
    }
 
-   #header__bottom-buttons {
+   #bottom-buttons__header{
      clear: both;
      margin:0;
      padding: 15px;
    }
-   .menu-icons {
+   .menu-section {
      display: block;
      text-align: center;
      padding: 15px;
      background-color: lavenderblush;
    }
-  .menu-icons p{
+  .menu-section__text{
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -256,26 +309,33 @@ p {
     font-size: 22px;
     text-transform: uppercase;
    }
-   .menu-item a {
+   .menu-item__link {
      text-decoration: none;
     }
-    .menu-item a:hover {
+    .menu-item__link:hover {
       color:white;
     }
-.button {
+.bottom-button__item {
   width: 100%;
   font-size: 15px;
   padding: 15px;
 }
+#slideshow-container .slideshow-image-wrapper {
+  background-position-y: 50%;
+  background-repeat: no-repeat;
 }
+}
+
+/* 767PX - 1025PX
+=============== */
 @media only screen and (max-width: 1025px) and (min-width: 767px)  {
-  .containericon {
+  .container-bars {
     display: none;
   }
   #closeButton{
     display: none;
   }
-  .container {
+  #top-menu {
     display: flex;
   }
   .menu-item {

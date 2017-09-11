@@ -18,8 +18,8 @@ letter-spacing:1px;
   display:none;
 }
 
-            // menu container
-.container {
+            // top menu container
+#top-menu {
   display: flex;
   margin:0 20px;
   padding-top: 5px;
@@ -73,10 +73,10 @@ p{
   }
 
 }
-.main-content-container {
+.main-content__container {
   display: inline;
   
-  .main-content-item {
+  .main-content__item {
   
    width: 100%;
   font-family: $header-fontfamily;
@@ -100,7 +100,7 @@ p{
       display: table;
     }
   }
-         .container {
+         #top-menu {
            display: none;
 
             .menu-item {
@@ -112,7 +112,7 @@ p{
 }
 }
 
-.main-content-item{
+.main-content__item{
   margin: 0 5px;
   img{
        width:100%;
