@@ -1,0 +1,77 @@
+
+/* PAGE-STYLE__BUTTON1
+====================== */
+.menu-item__link.purple {
+    color: #3C160E;
+}
+.header.yellow {
+font-family: 'Cabin Sketch', cursive;
+    font-size: 2em;
+    color: #3C160E;
+}
+.main-content__item-text.fontYellow{
+    color:#4424D6;
+font-family: 'Cabin Sketch', cursive;
+}
+.bottom-button__item.yellow {
+   background-color: #FDED2A;
+font-family: 'Cabin Sketch', cursive;
+
+}
+.bottom-button__item.yellow:hover {
+   background-color: #68B332;
+   color:#FDED2A;
+}
+.footer.yellow {
+    background-color:#FDFDDD;
+}
+
+
+/* PAGE-STYLE__BUTTON2
+====================== */
+
+.bottom-button__item.purple{
+    background-color: #881647;
+    font-size: 1em;
+    color:white;
+}
+.bottom-button__item.purple:hover{
+    background-color: #EA80AE;
+    color:#881647;
+}
+.header.purple {
+    color: #34091C;
+    font-size: 2em;
+    font-family: 'Dancing Script', cursive;
+}
+.main-content__item.fontPurple {
+    /* font-family:Cormorant Garamond, serif; */
+    font-size: 1.2em;
+      color: #34091C;
+}
+
+
+/* PAGE-STYLE__BUTTON3
+====================== */
+
+.header.orange {
+    font-family: 'Princess Sofia', cursive;
+    font-size: 2.5em;
+    color: #26490D;
+}
+.main-content__item-text.fontOrange{
+    color:#FB9902;
+}
+.bottom-button__item.orange {
+   background-color: #66B032;
+}
+.bottom-button__item.orange:hover {
+   background-color: #FB9902;
+   color:#213C0E;
+}
+.menu-item__link.orange {
+    color: #FB9902;
+}
+.bar1.orange, .bar2.orange, .bar3.orange {
+    background-color:#FB9902;
+}

@@ -1,3 +1,5 @@
+@import url("changing-style-onclick.css");
+
 body,
 html {
   margin:0;
@@ -8,11 +10,6 @@ html {
  .page-style{
     display: flex;
     width: 100%;
-    /* margin: 15px; */
-    padding: -8px;
-    box-sizing: border-box;
-    border: 1px dotted red;
-    background-color: lightgray;
   }
  .page-style button{
   flex-grow: 1;
@@ -23,43 +20,29 @@ html {
  border-radius: 5%;
  }
 
-#page-style__button1{
+.page-style__button1{
   background-color: yellow;
 }
-#page-style__button2 {
-  background-color: #487c36;
+.page-style__button2 {
+  background-color: #3B0D49;
+  color:white;
+;
 }
-#page-style__button3 {
+.page-style__button3 {
   background-color:orange;
+  color:green;
 }
-.header-changed-purple {
-color:#9f58b6 !important;
-}
-.header-changed-green{
-  color:#487c36 !important;
-}
-.container-bar {
-  background-color:#4c2759 !important;
-}
-.container-bar-orange{
-  background-color: #B1D730 !important;
-}
-.bottom-button__item-changed {
-  background-color: #9f58b6 !important;
-}
-.bottom-button__item-changed:hover {
-  background-color: #36367c !important;
-}
-.bottom-button__item-changed-orange{
-  background-color:#FC600A;
 
-}
 .main-content__item-text {
   text-align:center;
   letter-spacing:1px;
   font-family: Lora;
-    text-transform: uppercase;
-
+  text-transform: uppercase;
+  color: darkred;
+}
+.main-content__item-text-red {
+  color:red !important;
+  margin-top: 22%;
 }
 
 .container-bars {
@@ -118,7 +101,7 @@ color:#9f58b6 !important;
   font-family:Lora, cursive;
   text-align: center;
   letter-spacing: 2;
-color:#9F1434; 
+  color:#9F1434; 
 }
 
 /* Slideshow container */
@@ -172,9 +155,7 @@ color:#9F1434;
 
 
 @media (max-width: 320px) {
-  h1 {
-    margin-top: 55px;
-  }
+
   .container-bars{
     position: absolute;
     top: 20px;
@@ -184,6 +165,7 @@ color:#9F1434;
   #top-menu {
     display: none;
     margin-left: 0;
+    margin-top: 15%;
    }
    #closeButton {
      display: none;

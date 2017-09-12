@@ -105,38 +105,48 @@ function closeNav() {
 //PAGE STYLES
 //===========
 function button1() { 
-    $('#page-style__button1').click(() => {
-        if ($(window).width() > 767) {
-            $('#top-menu').css('backgroundColor', 'darkred');
-        } else { }
-        $('.header').css('color', 'purple');
-        $('#top-menu').css('color', 'darkred');
-        $('.bottom-button__item').css('backgroundColor', 'yellow');
+    $('.page-style__button1').click(() => {
+        $(".page-style__button1").text(function (i, text) {
+            return text === "Back to the initial style" ? "Yellow theme" : "Back to initial style";
+        });
+        $(".header").toggleClass("yellow");
+        $(".bottom-button__item").toggleClass('yellow');
+        $(".main-content__item-text").toggleClass("fontYellow");
+        $(".footer").toggleClass("yellow");
     })
 }
 button1();
+
+
+
 function button2() { }
-$('#page-style__button2').click(() => { 
-    $('.bar1, .bar2, .bar3').css('backgroundColor','#4c2759');
-    $('.bottom-button__item').css('backgroundColor','#9f58b6');
-    $('.header').css('color', 'red');
+$(".page-style__button2").click(() => { 
+    $(".page-style__button2").text(function (i, text) {
+        return text === "Back to the initial style" ? "Purple theme" : "Back to initial style";
+    });
+    $(".menu-item__link").toggleClass("purple");
+    $(".main-content__item-text").toggleClass("fontPurple");
+    $(".bottom-button__item").toggleClass('purple');
+    $('.header').toggleClass('purple');
 })
 button2();
+
+
 function button3() {
-    $('#page-style__button3').click(() => {
-        $('.bar1, .bar2, .bar3').css('backgroundColor', '#4c2759');
-        $('.bottom-button__item').css('backgroundColor', '#B1D730');
-        $('.header').css('color', '#F0F7D4');
-    });
-    $('#page-style__button3').hover(function() { 
-        $('.bottom-button__item').css('backgroundColor', '#B1D730');
-    });
+    $(".page-style__button3").click(() => {
+   
+        $(".page-style__button3").text(function (i, text) {
+            return text === "Back to the initial style" ? "Orange-green theme" : "Back to initial style";
+        });
+        $(".menu-item__link").toggleClass("orange");
+        $("#top-menu").css("borderBottom", "1px solid #FB9902");
+        $(".bar1, .bar2, .bar3").toggleClass("orange");
+        $(".header").toggleClass("orange");
+        $(".bottom-button__item").toggleClass('orange');
+        $(".main-content__item-text").toggleClass("fontOrange");
+
+    })
+
 }
 button3();
-function initialStyle() { 
-    $('initial').click(() => {
-        $('.bar1, .bar2, .bar3').css('backgroundColor', 'initial');
-        $('.bottom-button__item').css('backgroundColor', 'initial');
-        $('.header').css('color', 'initial');
-    });
-}
+
