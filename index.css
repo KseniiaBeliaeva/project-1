@@ -20,8 +20,11 @@ html {
  border-radius: 5%;
  }
 
-.page-style__button1{
+.page-style__button1 {
   background-color: yellow;
+}
+.page-style__button1:after {
+  content: "Yellow theme";
 }
 .page-style__button2 {
   background-color: #3B0D49;

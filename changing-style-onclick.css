@@ -1,45 +1,50 @@
 
 /* PAGE-STYLE__BUTTON1
 ====================== */
-.menu-item__link.purple {
+.purple .menu-item__link {
     color: #3C160E;
 }
-.header.yellow {
+.yellow .header {
 font-family: 'Cabin Sketch', cursive;
     font-size: 2em;
     color: #3C160E;
 }
-.main-content__item-text.fontYellow{
+
+
+.yellow .main-content__item-text{
     color:#4424D6;
 font-family: 'Cabin Sketch', cursive;
 }
-.bottom-button__item.yellow {
+.yellow .bottom-button__item {
    background-color: #FDED2A;
 font-family: 'Cabin Sketch', cursive;
 
 }
-.bottom-button__item.yellow:hover {
+.yellow .bottom-button__item:hover {
    background-color: #68B332;
    color:#FDED2A;
 }
-.footer.yellow {
+.yellow .footer {
     background-color:#FDFDDD;
 }
 
+.yellow .page-style__button1::after {
+ content: "Back to initial style";
+}
 
 /* PAGE-STYLE__BUTTON2
 ====================== */
 
-.bottom-button__item.purple{
+.purple .bottom-button__item{
     background-color: #881647;
     font-size: 1em;
     color:white;
 }
-.bottom-button__item.purple:hover{
+.purple .bottom-button__item:hover{
     background-color: #EA80AE;
     color:#881647;
 }
-.header.purple {
+.purple .header {
     color: #34091C;
     font-size: 2em;
     font-family: 'Dancing Script', cursive;
@@ -54,24 +59,24 @@ font-family: 'Cabin Sketch', cursive;
 /* PAGE-STYLE__BUTTON3
 ====================== */
 
-.header.orange {
+.orange .header {
     font-family: 'Princess Sofia', cursive;
     font-size: 2.5em;
     color: #26490D;
 }
-.main-content__item-text.fontOrange{
+.orange .main-content__item-text {
     color:#FB9902;
 }
-.bottom-button__item.orange {
+.orange .bottom-button__item {
    background-color: #66B032;
 }
-.bottom-button__item.orange:hover {
+.orange .bottom-button__item:hover {
    background-color: #FB9902;
    color:#213C0E;
 }
-.menu-item__link.orange {
+.orange .menu-item__link {
     color: #FB9902;
 }
-.bar1.orange, .bar2.orange, .bar3.orange {
+.orange .bar1, .orange .bar2, .orange .bar3 {
     background-color:#FB9902;
 }

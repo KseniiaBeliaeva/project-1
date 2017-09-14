@@ -104,49 +104,19 @@ function closeNav() {
 
 //PAGE STYLES
 //===========
-function button1() { 
-    $('.page-style__button1').click(() => {
-        $(".page-style__button1").text(function (i, text) {
-            return text === "Back to the initial style" ? "Yellow theme" : "Back to initial style";
-        });
-        $(".header").toggleClass("yellow");
-        $(".bottom-button__item").toggleClass('yellow');
-        $(".main-content__item-text").toggleClass("fontYellow");
-        $(".footer").toggleClass("yellow");
-    })
-}
-button1();
+let currentStyle = 'none';
 
-
-
-function button2() { }
-$(".page-style__button2").click(() => { 
-    $(".page-style__button2").text(function (i, text) {
-        return text === "Back to the initial style" ? "Purple theme" : "Back to initial style";
+function button1(btnSelector, className, themeName) { 
+    let btn = $(btnSelector);
+    btn.click(() => {
+        $("body").removeClass(currentStyle).addClass(className);
+        // btn.text(function (i, text) {
+        //     return text === "Back to the initial style" ? themeName : "Back to initial style";
+        // });
+        currentStyle = className;
     });
-    $(".menu-item__link").toggleClass("purple");
-    $(".main-content__item-text").toggleClass("fontPurple");
-    $(".bottom-button__item").toggleClass('purple');
-    $('.header').toggleClass('purple');
-})
-button2();
-
-
-function button3() {
-    $(".page-style__button3").click(() => {
-   
-        $(".page-style__button3").text(function (i, text) {
-            return text === "Back to the initial style" ? "Orange-green theme" : "Back to initial style";
-        });
-        $(".menu-item__link").toggleClass("orange");
-        $("#top-menu").css("borderBottom", "1px solid #FB9902");
-        $(".bar1, .bar2, .bar3").toggleClass("orange");
-        $(".header").toggleClass("orange");
-        $(".bottom-button__item").toggleClass('orange');
-        $(".main-content__item-text").toggleClass("fontOrange");
-
-    })
-
 }
-button3();
+button1(".page-style__button1", "yellow", );
+button1(".page-style__button2", "purple", "Purple theme");
+button1(".page-style__button3", "orange", "Orange theme");
 
