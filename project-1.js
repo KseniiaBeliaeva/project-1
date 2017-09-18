@@ -106,14 +106,12 @@ function closeNav() {
 //===========
 let currentStyle = 'none';
 
-function button1(btnSelector, className, themeName) { 
+function button1(btnSelector, className, themeName) {
     let btn = $(btnSelector);
     btn.click(() => {
         $("body").removeClass(currentStyle).addClass(className);
-        // btn.text(function (i, text) {
-        //     return text === "Back to the initial style" ? themeName : "Back to initial style";
-        // });
         currentStyle = className;
+      
     });
 }
 button1(".page-style__button1", "yellow", );
