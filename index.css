@@ -305,6 +305,7 @@ html {
      display: block;
      text-align: center;
      padding: 15px;
+     width:100%;
      background-color: lavenderblush;
    }
   .menu-section__text{

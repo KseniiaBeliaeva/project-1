@@ -4,9 +4,9 @@
 .yellow {
     background-color:rgba(243, 184, 204, 0.12);
            /* Firefox */
-    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.1s ease-in;
     /* WebKit */
-    -webkit-transition: all 1s ease-in;
+    -webkit-transition: all 0.1s ease-in;
     /* Opera */
     -o-transition: all 1s ease-in;
     /* Standard */
