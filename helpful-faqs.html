@@ -2,30 +2,205 @@
 <html>
 
 <head>
-    <title>Helpful FAQs</title>
+    <title> helpful FAQs</title>
 
-<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
-<!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> google icons (cancel)  -->
-<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<!--google icons (menu)-->
-<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-<!--JQuery-->
-<link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--google icons (menu)-->
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <!--JQuery-->
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <!--/Font for page-style-button2  //font-family: "Dancing Script", cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+    <!--/Font for the body- page-style-button2  //font-family: "Dancing Script", cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Princess+Sofia" rel="stylesheet">
+    <!--/Font for page-style-button3  //font-family: 'Princess Sofia', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Vibur" rel="stylesheet">
+    <!--/Font for page-style-button1  //font-family: 'Vibur', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+
 </head>
 
 <body>
-<!-- TOP MENU
+    <!-- TOP MENU
+    ===============
        TOP MENU -->
-<i class="menu-icon material-icons">menu</i>
 
-<div id="top-menu"></div>
+    <div class="container-bars" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
 
-<h1>Children"s Birthday Parties and Events</h1>
-<script src="project-1.js"></script>
+    <button class="menu-section" onclick="openNav()">
+  <a class="menu-section__text">Menu</a>
+</button>
 
+    <div id="top-menu">
+        <a id="closeButton" onclick="closeNav()">&times;</a>
+        <div class="menu-item"><a class="menu-item__link" href="index.html">home</a></div>
+        <div class="menu-item"><a class="menu-item__link" href="helpful-faqs.html">helpful FAQs</a></div>
+        <div class="menu-item"><a class="menu-item__link" href="princess-parties.html">princess parties</a></div>
+        <div class="menu-item"><a class="menu-item__link" href="superheroes-parties.html">superheroes parties</a></div>
+        <div class="menu-item"><a class="menu-item__link" href="packages.html">packages</a></div>
+        <div class="menu-item"><a class="menu-item__link" href="make-a-booking.html">make a booking / contacts</a></div>
+        <div class="menu-item"><a class="menu-item__link" href="reviews.html">reviews</a></div>
+    </div>
+
+
+
+
+    <!--BUTTONS FOR CHANGING STYLES-->
+    <div class="wrapper">
+        <div style="border: 3px dotted red;padding: 4px;">
+            <h5 class="main-content__item-text main-content__item-text-red">
+                Attention! This section is temporary! <br>Press these buttons below for other page style designs!</h5>
+            <div class="page-style">
+                <button class="page-style__button1"></button>
+                <button class="page-style__button2">Purple theme</button>
+                <button class="page-style__button3">Orange-green theme</button>
+            </div>
+        </div>
+        <h1 class="header">Children's Birthday Parties and Events</h1>
+
+        <!-- SLIDESHOW
+    ==============
+       SLIDESHOW -->
+
+        <div id="slideshow-container"></div>
+
+
+        <!-- MAIN CONTENT
+    =================
+      MAIN CONTENT-->
+        <div class="main-content__container">
+            <div class="main-content__item">
+                <h5 class="main-content__item-text">About Us</h5>
+                <p>Payment: Payment can be made either Cash on the day or via EFT Bank Deposit one week before Cheques are not
+                    accepted. Cancellation Fee: if you decide to cancel your event we understand the unexpected can happen
+                    and are happy to cancel the party at no cost. Travel Fee: Small Travel Fees will Occur depending on where
+                    you are located.
+                </p>
+            </div>
+
+            
+                <ul class="main-content__item-list">
+                     <h5 class="main-content__item-text">Terms and Conditions:</h5>
+                <li>It is preferred that entertainment be held indoors, due to unpredictable weather that may cause harm to our
+                    beautiful costumes and props (i.e. dirt, mud, water). If you wish to hold the Event outdoors, please
+                    provide a rug and other comfortable things such as cushions for the children and for your entertainer
+                    to rest on</li>
+                <li>It is mandatory that the event host or mum of the birthday child be close at hand at the end to provide payment
+                    at the conclusion of the performance.</li>
+
+                <li>When paying your entertainer at the end, please make sure it is away from the children as the ruins the magical
+                    experience and illusion.</li>
+
+                <li>When making your booking clients agree that all Princess Characters will be provided by 'Magical Princess
+                    Entertainment' at your event. Unfortunately we cannot work side of side another Princess or character
+                    company.</li>
+
+                <li>While the duration of your child's magical experience. please make sure you only address your entertainer
+                    by their character name and only by their character name.</li>
+
+                <li>If you have booked face painting during your time with us, please make sure that there are two cups of water
+                    and a table available for your princess to clean and wash her paint brushes.</li>
+
+                <li>The most important rule: Have a great time, sit back, and enjoy! :)</li>
+                </ul>
+               
+
+
+            <div class="main-content__item">
+                <h5 class="main-content__item-text">Questions and answers: </h5>
+            <ul class="main-content__item-list">
+              
+                <li><p class="main-content__item-listheader">Which Locations are you able to make appearances and or visit?</p>It is preferred that entertainment be held indoors, due to unpredictable weather that may cause harm to our
+                    beautiful costumes and props (i.e. dirt, mud, water). If you wish to hold the Event outdoors, please
+                    provide a rug and other comfortable things such as cushions for the children and for your entertainer
+                    to rest on</li>
+                <li><p class="main-content__item-listheader">Can I pick the performer that does my party?</p>It is mandatory that the event host or mum of the birthday child be close at hand at the end to provide payment
+                    at the conclusion of the performance.</li>
+
+                <li><p class="main-content__item-listheader">How much room do I need?</p>When paying your entertainer at the end, please make sure it is away from the children as the ruins the magical
+                    experience and illusion.</li>
+
+                <li><p class="main-content__item-listheader">Will an Adult need to be present for the duration of the entertainment?</p>When making your booking clients agree that all Princess Characters will be provided by 'Magical Princess
+                    Entertainment' at your event. Unfortunately we cannot work side of side another Princess or character
+                    company.
+                </li>
+
+                <li><p class="main-content__item-listheader">When do I need to serve the party food?</p>While the duration of your child's magical experience. please make sure you only address your entertainer
+                    by their character name and only by their character name.</li>
+
+                <li><p class="main-content__item-listheader">What is your policy on tipping performers?</p>If you have booked face painting during your time with us, please make sure that there are two cups of water
+                    and a table available for your princess to clean and wash her paint brushes.</li>
+
+                <li><p class="main-content__item-listheader">How Do I book my Event?</p>The most important rule: Have a great time, sit back, and enjoy! :)</li>
+                <p class="main-content__item-listheader">
+                     Once you have chosen which package you would like along with your chosen character. please go to the Contact us Form and
+                    fill out all the details required. You will then receive a reply email within 24 hours
+                </p>
+            </ul>
+            </div>
+        </div>
+        <!-- Flex buttons -->
+        <h5 class="main-content__item-text">How old is your child?</h5>
+        <div class="bottom-buttons__wrapper">
+            <div class="bottom-buttons">
+                <button class="bottom-button__item">Under 5</button>
+                <p class="bottom-button__description">Pri regióne posidõniúm te. Façér sempêr ãd vel. Vidé duis petentium meá éx, lõrem àtquí môlestie mêa id.
+                    His ea mazim volútpat interpretaris, pri né esse definiebas assueverit, case táçimátês usu ât. Solêt
+                    iudico ei mei, quô ut amet impedit, tàle fâcéte te his.</p>
+            </div>
+            <div class="bottom-buttons">
+                <button class="bottom-button__item">5 - 10</button>
+                <p class="bottom-button__description">Summo sólet êám nê, çómmôdõ ornãtus phílosóphiá eos ei, cu erôs luçilíus prodêssét pri. Mél ullúm nõstrud
+                    sadipsçing te, in sed dócendi cotidieque.</p>
+            </div>
+            <div class="bottom-buttons">
+                <button class="bottom-button__item">Under 13</button>
+                <p class="bottom-button__description">ólôre inimicus refêrrentúr mea eu. Hás pútànt sáperet héndrerit an, qui et volumus euripidis hendrerit, aúgué
+                    êrànt tórquátos prí cu. Sit éí esse movet õcurrerét, vel copiosâé splendide eâ.</p>
+            </div>
+        </div>
+        <!-- HIDDEN SECTION FOR SCREENS > 767PX
+================================= -->
+        <div class="bottom-buttons__ss767px">
+            <h6 class="main-content__item-text-btns">A child is under 5 years.
+            </h6>
+            <p>Pri regióne posidõniúm te. Façér sempêr ãd vel. Vidé duis petentium meá éx, lõrem àtquí môlestie mêa id. His
+                ea mazim volútpat interpretaris, pri né esse definiebas assueverit, case táçimátês usu ât. Solêt iudico ei
+                mei, quô ut amet impedit, tàle fâcéte te his.</p>
+            <h6 class="main-content__item-text-btns">A child is from 5 to 10 years.
+            </h6>
+            <p>Pri regióne posidõniúm te. Façér sempêr ãd vel. Vidé duis petentium meá éx, lõrem àtquí môlestie mêa id. His
+                ea mazim volútpat interpretaris, pri né esse definiebas assueverit, case táçimátês usu ât. Solêt iudico ei
+                mei, quô ut amet impedit, tàle fâcéte te his.</p>
+            <h6 class="main-content__item-text-btns">A child is older 10 years.
+            </h6>
+            <p>Pri regióne posidõniúm te. Façér sempêr ãd vel. Vidé duis petentium meá éx, lõrem àtquí môlestie mêa id. His
+                ea mazim volútpat interpretaris, pri né esse definiebas assueverit, case táçimátês usu ât. Solêt iudico ei
+                mei, quô ut amet impedit, tàle fâcéte te his.</p>
+        </div>
+
+        <!-- FACEBOOK LIKE BUTTON
+  ==================== -->
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FMagicalprincesses%2F&width=50&layout=button_count&action=recommend&size=small&show_faces=true&share=true&height=46&appId"
+            width="200" height="36" style="border:none;overflow:hidden;" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+        <div class="fb-save" data-uri="https://www.facebook.com/Magicalprincesses/" data-size="large"></div>
+        <footer>
+            <div class="footer">
+                <p class="footer-text">Copyright &copy; Ksenia Beliaeva, 2017</p>
+            </div>
+        </footer>
+    </div>
+    <script src="project-1.js"></script>
 </body>
 
 </html>
