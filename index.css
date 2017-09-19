@@ -65,7 +65,9 @@ html {
     font-size: 20px;
     text-decoration: none;
 }
-
+.bottom-buttons__ss767px {
+  display: none;
+}
 /* X-SHAPED ICON
 ============= */
 .menu-section {
@@ -134,8 +136,9 @@ html {
 }
  .main-content__item {
     width: 100%;
-    font-family: Lora, serif; }
-  .main-content__item-img{
+    font-family: Lora, serif; 
+  }
+  #main-content__item-img{
     width: 50%;
     clear: both; 
   }
@@ -289,12 +292,16 @@ html {
    .main-content__item {
   text-align: justify;
 }
-   .main-content__container img {
+   .main-content__item-img {
     width: 50%;
     float: left;
     padding: 0 15px 0 0;
     margin-bottom: 3%;
    }
+   .main-content__item-img.img-hidden {
+     display: none;
+   }
+
 
    #bottom-buttons__header{
      clear: both;
@@ -306,6 +313,8 @@ html {
      text-align: center;
      padding: 15px;
      width:100%;
+     border: 1px solid;
+     font-family: Lora, sans-serif; 
      background-color: lavenderblush;
    }
   .menu-section__text{
@@ -337,6 +346,14 @@ html {
 /* 767PX - 1025PX
 =============== */
 @media only screen and (max-width: 1025px) and (min-width: 767px)  {
+  body,
+  html {
+  margin: 0;
+  padding: 10px;
+  }
+  body {
+    position: relative;
+  }
   .container-bars {
     display: none;
   }
@@ -345,10 +362,45 @@ html {
   }
   #top-menu {
     display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20%;
+    border: none;
+    padding-top: 10px;
+  }
+  .wrapper {
+    margin-left: 20%;
   }
   .menu-item {
     flex-grow: 1;
     text-align: center;
     font-family:Lora, serif;
+    padding: 10%;
+    border: 1px solid;
   }
+  .menu-item__link {
+    font-size: 15px;
+  }
+  .main-content__item-text {
+    margin: 2%;
+  }
+  .main-content__item-img{
+    width:100%;
+  }
+  .bottom-buttons__wrapper {
+    display: none;
+  }
+  .bottom-buttons__ss767px {
+    display: inline;
+  }
+  .main-content__item-text-btns {
+    color:black;
+    text-align:center;
+  letter-spacing:1px;
+  font-family: Lora;
+  text-transform: uppercase;
+  }
+
 }

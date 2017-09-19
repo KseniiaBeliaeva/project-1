@@ -4,13 +4,13 @@
 .yellow {
     background-color:rgba(243, 184, 204, 0.12);
            /* Firefox */
-    -moz-transition: all 0.1s ease-in;
+    -moz-transition: all 0.7 ease-in;
     /* WebKit */
-    -webkit-transition: all 0.1s ease-in;
+    -webkit-transition: all 0.7 ease-in;
     /* Opera */
-    -o-transition: all 1s ease-in;
+    -o-transition: all 0.7 ease-in;
     /* Standard */
-    transition: all 1s ease-in;
+    transition: all 0.7 ease-in;
 
 }
 .purple .menu-item__link {
@@ -74,13 +74,13 @@ font-family: 'Cabin Sketch', cursive;
 .orange {
     background-color:rgba(255, 235, 205, 0.3);
         /* Firefox */
-    -moz-transition: all 1s ease-in;
+    -moz-transition: all 0.7 ease-in;
     /* WebKit */
-    -webkit-transition: all 1s ease-in;
+    -webkit-transition: all 0.7 ease-in;
     /* Opera */
-    -o-transition: all 1s ease-in;
+    -o-transition: all 0.7 ease-in;
     /* Standard */
-    transition: all 1s ease-in;
+    transition: all 0.7 ease-in;
 
 }
 .orange .header {
@@ -101,6 +101,9 @@ font-family: 'Cabin Sketch', cursive;
 }
 .orange .menu-item__link {
     color: #e24a1a;
+}
+.orange .menu-item__link:hover {
+    color: #26490D;
 }
 .orange .bar1, .orange .bar2, .orange .bar3 {
     background-color:#e24a1a;

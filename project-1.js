@@ -83,7 +83,7 @@ function myFunction(x) {
     $('#top-menu').slideToggle();
 }
 
-//ANIMATED MENU BAR SCREENS 415-768px
+//ANIMATED MENU BAR (415-768px)
 //===================================
 
 function openNav() {
@@ -92,14 +92,6 @@ function openNav() {
 function closeNav() {
     document.getElementById("top-menu").style.left = "-100%";
 }
-
-
-//Chaining mediaqueries and javascript
-
-// const mq = window.matchMedia('(max-width: 1025px) and (min-width: 415px)');
-// if (mq.matches) {
-//     alert('Hey');
-// } else (alert('NO'));
 
 
 //PAGE STYLES
@@ -111,7 +103,6 @@ function button1(btnSelector, className, themeName) {
     btn.click(() => {
         $("body").removeClass(currentStyle).addClass(className);
         currentStyle = className;
-      
     });
 }
 button1(".page-style__button1", "yellow", );
