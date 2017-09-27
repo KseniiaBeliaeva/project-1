@@ -102,7 +102,17 @@ font-family: 'Cabin Sketch', cursive;
 .orange .menu-item__link {
     color: #e24a1a;
 }
-.orange .menu-item__link:hover {
+.orange .menu-section{
+    background-color:#ffad34;
+}
+.orange #top-menu{
+    background-color:#ffad31;
+}
+.orange #closeButton {
+    color:#e24a1a;
+}
+.orange .menu-item__link:hover,
+.orange #closeButton:hover {
     color: #26490D;
 }
 .orange .bar1, .orange .bar2, .orange .bar3 {
