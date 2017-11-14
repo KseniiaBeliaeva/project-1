@@ -152,7 +152,7 @@ li {
     width: 100%;
     font-family: Lora, serif; 
   }
-  #main-content__item-img{
+  .main-content__item-img{
     width: 50%;
     clear: both; 
   }
@@ -428,8 +428,11 @@ li {
   border: none;
   clear: both;
   margin: 15px 0;
+  text-align: center;
   }
-
+.menu-item__link:hover {
+  color:green;
+}
   #closeButton,
   .container-bars {
     display: none;
