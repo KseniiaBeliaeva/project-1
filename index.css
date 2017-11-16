@@ -424,11 +424,8 @@ li {
 @media only screen and (min-width: 1026px)  {
 #top-menu {
   display: flex;
-  flex-direction: row;
-  border: none;
-  clear: both;
-  margin: 15px 0;
-  text-align: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
   }
 .menu-item__link:hover {
   color:green;
