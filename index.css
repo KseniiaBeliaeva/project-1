@@ -1,4 +1,6 @@
 @import url("changing-style-onclick.css");
+@import url("helpful-faqs.css");
+
 .fb_iframe_widget{
   display: block !important;
 }
