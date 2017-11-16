@@ -58,7 +58,7 @@ font-family: 'Cabin Sketch', cursive;
 }
 .purple .header {
     color: #34091C;
-    font-size: 2em;
+    font-size: 3em;
     font-family: 'Dancing Script', cursive;
 }
 .main-content__item.fontPurple {
@@ -104,9 +104,10 @@ font-family: 'Cabin Sketch', cursive;
 }
 .orange .menu-section{
     background-color:#ffad34;
-}
+/* }
 .orange #top-menu{
     background-color:#ffad31;
+} */
 }
 .orange #closeButton {
     color:#e24a1a;
