@@ -17,6 +17,7 @@ html {
    background-color: #bedbf7;
    border: 3px dotted red;
    padding: 4px;
+   margin: 15px 0;
  }
  p {
    font-family: Lora, serif;
@@ -430,7 +431,7 @@ li {
   }
 }
 
-@media only screen and (min-width: 981px) and (max-width: 1180px)  {
+@media only screen and (min-width: 981px)  {
   body {
     padding-top: 0;
   }
@@ -455,14 +456,10 @@ li {
     width: 50%;
   }
   .main-content__item-p {
-    float: right;
-    width: 45%;
-    margin: 0 2%;
-  }
-   .main-content__item-fullwidth {
    float: none;
    width:100%;
- }
+  }
+
 
   .bottom-buttons__wrapper {
     display: none;
