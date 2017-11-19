@@ -10,6 +10,8 @@ html {
   padding: 2%;
   padding-bottom: 0;
   margin-bottom: 0;
+  line-height: 2;
+   font-family: Lora, serif;
  }
  .change-style__section {
    background-color: #bedbf7;
@@ -19,6 +21,7 @@ html {
  p {
    font-family: Lora, serif;
  }
+
  .page-style{
     display: flex;
     width: 100%;
@@ -281,10 +284,9 @@ li {
 @media only screen and (max-width: 768px) and (min-width: 415px)  {
   body {
     padding: 5px;
-  
   }
   html {
-    padding: 0;
+    padding: 2%;
   }
   .container-bars {
     display: none;
@@ -366,7 +368,7 @@ li {
 
 /* 767PX - 1025PX
 =============== */
-@media only screen and (min-width: 767px) and (max-width : 1025px)  {
+@media only screen and (min-width: 767px) and (max-width : 980px)  {
   body,
   html {
   margin: 0;
@@ -428,7 +430,7 @@ li {
   }
 }
 
-@media only screen and (min-width: 950px)  {
+@media only screen and (min-width: 981px) and (max-width: 1180px)  {
   body {
     padding-top: 0;
   }
@@ -457,6 +459,10 @@ li {
     width: 45%;
     margin: 0 2%;
   }
+   .main-content__item-fullwidth {
+   float: none;
+   width:100%;
+ }
 
   .bottom-buttons__wrapper {
     display: none;
