@@ -3,7 +3,7 @@
 ====================== */
 .yellow {
     background-color:rgba(243, 184, 204, 0.12);
-           /* Firefox */
+    /* Firefox */
     -moz-transition: all 0.7 ease-in;
     /* WebKit */
     -webkit-transition: all 0.7 ease-in;
