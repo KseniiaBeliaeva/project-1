@@ -79,6 +79,10 @@ html {
 .bottom-buttons__ss767px {
   display: none;
 }
+.disabled {
+  pointer-events: none;
+  color: gray;
+}
 /* X-SHAPED ICON
 ============= */
 .menu-section {

@@ -11,7 +11,7 @@
         {
             "taskName": "Sass Compile",
             "type": "shell",
-            "command": "node-sass --watch --source-map true index.scss index.css",
+            "command": "node-sass --watch --source-map true index.scss styles.css",
             "group": "build",
             "problemMatcher": [
                 "$lessCompile"
